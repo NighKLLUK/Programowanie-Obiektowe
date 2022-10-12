@@ -1,0 +1,32 @@
+using System;
+namespace xd
+{
+    class program
+    {
+        static void Main(String[] args)
+        {
+            float a,b,c,delta;
+			      double x,x1,x2;
+			      Console.WriteLine("0=Ax^2+Bx+C");
+			      Console.WriteLine("Podaj A");
+			      a = float.Parse(Console.ReadLine());
+			      Console.WriteLine("Podaj B");
+			      b = float.Parse(Console.ReadLine());
+			      Console.WriteLine("Podaj C");
+			      c = float.Parse(Console.ReadLine());
+			      delta= (b*b)-4*a*c;
+			
+			      if (delta>0){
+			        Console.WriteLine("Delta wynosi: " + delta); 
+           	  x1 = (-b + Math.Sqrt(delta)) / (2 * a); 
+          	  x2 = (-b - Math.Sqrt(delta)) / (2 * a); 
+			      }
+			      else if (delta<0) Console.WriteLine("Pierwiastkinie istnieja");
+			      else if (delta==0){
+			        x=-b/(2*a);
+			        Console.WriteLine("Jest 1 pierwiatek równania:" + x);
+				
+			      }
+      }
+    }
+}
