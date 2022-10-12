@@ -1,0 +1,20 @@
+using System;
+namespace xd
+{
+    class program
+    {
+        static void Main(String[] args)
+        {
+        	float wzrost ,masa, bmi;
+			Console.WriteLine("BMI=masa/wzrost");
+			Console.WriteLine("Podaj wzrost w metrach:");
+			wzrost = float.Parse(Console.ReadLine());
+			Console.WriteLine("Podaj masę w kg:");
+			masa = float.Parse(Console.ReadLine());
+			
+			bmi=masa/wzrost;
+			Console.WriteLine(bmi);
+			
+       }
+    }
+}
