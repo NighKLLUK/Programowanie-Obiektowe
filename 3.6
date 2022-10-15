@@ -1,0 +1,26 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		Console.WriteLine("BMI=masa/wzrost");
+		Console.WriteLine("Podaj mase w kg");
+		double a = double.Parse(Console.ReadLine());
+		Console.WriteLine("Podaj wzrost w m");
+		double b = double.Parse(Console.ReadLine());
+		double bmi;
+		bmi=a/b;
+		
+		if (bmi<18.5){
+		Console.WriteLine("Niedowaga");
+		}
+		else if (bmi>18.5 && bmi<24.99){
+		Console.WriteLine("wartość prawidłowa");
+		}
+		else if (bmi>=24.99){
+		Console.WriteLine("nadwaga");
+		}
+		
+	}
+}
