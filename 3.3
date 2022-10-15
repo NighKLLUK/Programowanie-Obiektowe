@@ -1,0 +1,36 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		Console.WriteLine("Podaj 1sza liczbe");
+		int x = int.Parse(Console.ReadLine());
+		Console.WriteLine("Podaj 2ga liczbe");
+		int y = int.Parse(Console.ReadLine());
+		Console.WriteLine("Podaj 2ga liczbe");
+		int z = int.Parse(Console.ReadLine());
+		
+		if (x>y && x>z){
+			Console.WriteLine("1sza liczba jest najwieksza");
+		}
+		else if(y>x && y>z){
+				Console.WriteLine("2ga liczba jest najwieksza");
+		}
+		else if(z>x && z>y){
+				Console.WriteLine("3cia liczba jest najwieksza");
+		}
+		else if(x==y && x==z){
+			Console.WriteLine("Liczby sa rowne");
+		}
+		else if (x>z && x==y){
+			Console.WriteLine("1sza i 2ga liczba są najwieksze");
+		}
+		else if (x>y && x==z){
+			Console.WriteLine("1sza i 3cia liczba są najwieksze");
+		}
+		else{
+			Console.WriteLine("2ga i 3cia liczba są najwieksze");
+		}
+	}
+}
