@@ -1,0 +1,35 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		Console.WriteLine("Ax+Bx+C=0");
+		Console.WriteLine("Podaj A liczbe");
+		double a = double.Parse(Console.ReadLine());
+		Console.WriteLine("Podaj B liczbe");
+		double b = double.Parse(Console.ReadLine());
+		Console.WriteLine("Podaj C liczbe");
+		double c = double.Parse(Console.ReadLine());
+		
+		double delta;
+		double pzd;
+		delta = (b*b)-(4*a*c);
+		Console.WriteLine(delta);
+		if (delta>0){
+			pzd= Math.Sqrt(delta);
+			if (pzd == 0){
+				Console.WriteLine("Istnieje 1 pierwiastek rownania");
+			}
+			else if (pzd > 0){
+				Console.WriteLine("Istnieja 2 pierwiastki rownania");
+			}
+			else if (pzd< 0){
+				Console.WriteLine("Nie istnieja pierwiastki tego rownania");
+			}
+		}
+		else{
+			Console.WriteLine("Ujemna delta, brak pierwiastkow");
+		}
+	}
+}
