@@ -1,0 +1,34 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		Console.WriteLine("Podaj 1 liczbe");
+		double x = double.Parse(Console.ReadLine());
+		Console.WriteLine("Podaj 2 liczbe");
+		double y = double.Parse(Console.ReadLine());
+		Console.WriteLine("Podaj dzialanie: + - * / ");
+		string dzialanie;
+		dzialanie= Console.ReadLine();
+		
+		if(dzialanie == "+"){
+			Console.WriteLine("Wynik to:");
+			Console.WriteLine(x+y);
+		}
+		else if(dzialanie == "-"){
+			Console.WriteLine("Wynik to:");
+			Console.WriteLine(x-y);
+		}
+		else if(dzialanie == "/"){
+			Console.WriteLine("Wynik to:");
+			Console.WriteLine(x/y);
+		}
+		else if(dzialanie == "*"){
+			Console.WriteLine("Wynik to:");
+			Console.WriteLine(x*y);
+		}
+		
+		
+	}
+}
