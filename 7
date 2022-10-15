@@ -1,0 +1,39 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		Console.WriteLine("Podaj numer dnia tygodnia");
+		int dzien=int.Parse(Console.ReadLine());
+		
+		switch(dzien)
+		{
+			case 1:
+				Console.WriteLine("Poniedziałek");
+				break;
+			case 2:
+				Console.WriteLine("Wtorek");
+				break;
+			case 3:
+				Console.WriteLine("środa");
+				break;
+			case 4:
+				Console.WriteLine("czwartek");
+				break;
+			case 5:
+				Console.WriteLine("piatek");
+				break;
+			case 6:
+				Console.WriteLine("sobota");
+				break;
+			case 7:
+				Console.WriteLine("niedziela");
+				break;
+			default:
+				Console.WriteLine("Niepoprawna wartosc");
+				break;
+		}
+		Console.ReadKey();
+	}
+}
