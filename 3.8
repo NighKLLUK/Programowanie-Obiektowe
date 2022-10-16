@@ -1,0 +1,22 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		Console.WriteLine("Podaj średnia ocen:");
+		double x = double.Parse(Console.ReadLine());
+		if (x>2 && x<3.99){
+			Console.WriteLine("Stypendium: 0 pln");
+		}
+		else if (x>=4.00 && x<4.79){
+			Console.WriteLine("Stypendium: 350 pln");
+		}
+		else if (x>=4.8 && x<5){
+			Console.WriteLine("Stypendium: 550 pln");
+		}
+		else{
+			Console.WriteLine("Niepoprawna wartość");
+		}
+	}
+}
