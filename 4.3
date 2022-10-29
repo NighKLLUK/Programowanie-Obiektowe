@@ -14,5 +14,14 @@ public class Program
         }
         Array.Sort(liczby);
         Console.WriteLine(liczby[liczby.Length-1]);
+        Console.WriteLine(liczby[0]);
+        
+        int suma = 0;
+        for (i = 0; i < liczby.Length - 1; i++)
+        {
+            suma += liczby[i];
+        }
+        Console.WriteLine(suma/liczby.Length);
+
     }
 }
